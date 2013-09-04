@@ -4,13 +4,6 @@ h=5.5;
 $fn=10;
 
 module bowden_mount(){
-
-
-
-
-
-
-
 	difference(){
 		union(){
 			hull(){
@@ -36,5 +29,5 @@ module bowden_mount(){
 	
 }
 
-bowden_mount();
+rotate([180,0,0]) bowden_mount();
 	
