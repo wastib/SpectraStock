@@ -57,10 +57,10 @@ module Spectra_Line_Mount() {
        	translate([9, 2, 0]) cube([6, 13, height], center=true); //The main support
 
         translate([8,3,0]) rotate([0,90,0]) cylinder(r=1.55, h=10,center=true, $fn = 10); //3mm screw hole
-	translate([3,3,0]) rotate([0,90,0]) cylinder(r=3.5,h=10,center=true, $fn = 10);  //3mm washer tensioner space
+	translate([3.5,3,0]) rotate([0,90,0]) cylinder(r=3.5,h=10,center=true, $fn = 10);  //3mm washer tensioner space
 	translate([11.5,3,0]) rotate([0,90,0]) cylinder(r=3,h=2,center=true, $fn=6);
 
-	translate([7.25,3,0]) cube([1.5,1.25,30],center=true); //Spectra line hole space
+	translate([7.75,3,0]) cube([1.5,1.25,30],center=true); //Spectra line hole space
 	translate([9,3,8]) cube([7,1.25,1.25],center=true);
       }
     }
