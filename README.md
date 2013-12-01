@@ -1,3 +1,6 @@
+NOTE: All development is now under a new git profile. Link to the SpectraStock https://github.com/byronwasti/SpectraStock
+The Spectrastock is actually on hold, as I work on the Spectrastock-Nano https://github.com/byronwasti/SpectraStock-Nano
+
 The .scad files are the program files for the 3D designs. They were modeled using OpenSCAD, a 3D modeler that uses code. To see a 3D representation of the files, the .STL folder has a few. Of special notice are the carriage and platform designs.
 
 -Byron

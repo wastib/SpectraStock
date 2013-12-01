@@ -1,9 +1,9 @@
 include <configuration.scad>;
 
-radius = 11;
+radius = 9;
 width = 16;
 top = 5;
-smoothness = 60;
+smoothness = 20;
 
 //for the center part
 
@@ -26,15 +26,15 @@ module spool() {
 		}
 
     // Motor shaft.
-		cylinder(r=motor_shaft_radius, h=50, center=true, $fn=24);
+		cylinder(r=motor_shaft_radius, h=50, center=true, $fn=20);
 
     // Filament tunnels.
 		translate([0, radius, width/2-1.5]) rotate([-30, 0, 0])
-			#cube([1, 2*radius, 1.5], center=true);
+			#cube([2, 2*radius, 1.5], center=true);
 		translate([0, radius, -width/2+1.5]) rotate([30, 0, 0])
-			#cube([1, 2*radius, 1.5], center=true);
+			#cube([2, 2*radius, 1.5], center=true);
 		translate([0, 5, 0])
-			#cylinder(r=1, h=40, center=true, $fn=6);
+			#cylinder(r=1.5, h=40, center=true, $fn=6);
 
     // M3 screws and nuts on three sides.
 		for (a = [0:120:359]) {
